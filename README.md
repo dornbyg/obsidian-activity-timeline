@@ -23,11 +23,11 @@ Not yet in the Community Plugins directory. Two ways to install:
 
 ### Option A — BRAT (easiest, gets updates automatically)
 1. Install **BRAT** from Settings → Community plugins → Browse.
-2. In BRAT's settings choose **Add beta plugin** and paste this repository's web address (the URL in your browser's address bar).
+2. In BRAT's settings choose **Add beta plugin** and paste: `dornbyg/obsidian-activity-timeline`
 3. Enable **Activity Timeline** under Settings → Community plugins.
 
 ### Option B — Manual
-1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](../../releases/latest).
+1. Download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/dornbyg/obsidian-activity-timeline/releases/latest).
 2. In your vault, create the folder `.obsidian/plugins/activity-timeline/` and put the three files in it.
    (The `.obsidian` folder is hidden — on Mac press **Cmd+Shift+.** in Finder to show it.)
 3. In Obsidian: Settings → Community plugins → reload the list → enable **Activity Timeline**.
@@ -47,11 +47,13 @@ If your vault syncs (iCloud, Obsidian Sync, etc.), the plugin folder syncs too �
 
 ## Feature requests & bugs
 
-Ideas and bug reports are welcome — please use the [Issues tab](../../issues/new/choose), which has short forms for both. If someone has already posted your idea, a 👍 on it helps decide what gets built next.
+Ideas and bug reports are welcome — please use the [Issues tab](https://github.com/dornbyg/obsidian-activity-timeline/issues/new/choose), which has short forms for both. If someone has already posted your idea, a 👍 on it helps decide what gets built next.
 
 ## Credits
 
 Inspired by a mockup and discussion in [this r/ObsidianMD thread](https://www.reddit.com/r/ObsidianMD/s/lN6dFiUVAC).
+
+Designed and tested by Dorn; code written with the help of [Claude](https://claude.ai).
 
 ## License
 

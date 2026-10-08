@@ -5,5 +5,6 @@
   "minAppVersion": "1.4.0",
   "description": "A day-by-day timeline of everything you did in your vault: notes created and edited (with previews of what changed), Tasks completed and dropped, and tags added.",
   "author": "Dorn",
+  "authorUrl": "https://github.com/dornbyg",
   "isDesktopOnly": false
 }
