@@ -2,6 +2,8 @@
 
 **See what you actually did in your vault on any given day — with previews, not just file names.**
 
+![Activity Timeline in Year view: a day's events with previews on the left, activity heatmap and counts by type on the right](docs/screenshot.png)
+
 Activity Timeline logs your work as you go and shows it as a scrollable timeline: notes you created, the lines you changed in notes you edited, tasks you completed or dropped, and tags you added. It's built as external memory — a way to answer "what was I working on last Tuesday?" at a glance.
 
 > ⚠️ **Early version (0.1.0).** It works day to day, but expect rough edges. Feedback is very welcome — see [Feature requests & bugs](#feature-requests--bugs).
