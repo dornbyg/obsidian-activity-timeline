@@ -53,7 +53,7 @@ Ideas and bug reports are welcome — please use the [Issues tab](https://github
 
 **UI design and original idea** by the author of [this r/ObsidianMD post](https://www.reddit.com/r/ObsidianMD/s/lN6dFiUVAC), whose mockup (timeline with type-labelled cards and previews, filter chips, Day/Week/Month/Year toggle, activity heatmap and by-type sidebar) this plugin is built from.
 
-Designed and tested by Dorn; code written with the help of [Claude](https://claude.ai).
+Built and tested by Dorn, adapted to the Tasks plugin and tagging; code written with the help of [Claude](https://claude.ai).
 
 ## License
 
