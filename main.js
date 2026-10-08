@@ -1,6 +1,6 @@
 'use strict';
 /*
- * Activity Timeline — Obsidian plugin v0.1.0
+ * Activity Timeline — Obsidian plugin v0.1.1
  * Logs what you do in your vault (notes created/edited with change previews,
  * Tasks-plugin tasks completed/dropped, tags added/removed) and shows it as a
  * filterable timeline. Plain JavaScript, no build step. Works on desktop and mobile.
@@ -8,7 +8,7 @@
 const obsidian = require('obsidian');
 const { Plugin, ItemView, PluginSettingTab, Setting, TFile, TFolder, setIcon, moment, getAllTags, debounce, Platform } = obsidian;
 
-const VIEW_TYPE = 'activity-timeline-view';
+const VIEW_TYPE = 'dorn-activity-timeline-view';
 const LOG_DIR = '.activity-log';
 const FLUSH_MS = 30000;
 
@@ -180,7 +180,11 @@ class ActivityTimelinePlugin extends Plugin {
     this.addCommand({ id: 'open', name: 'Open activity timeline', callback: () => this.activateView() });
     this.addCommand({ id: 'open-today', name: "Show today's activity", callback: () => this.activateView('day') });
     this.addSettingTab(new TimelineSettingTab(this.app, this));
-    this.registerMarkdownCodeBlockProcessor('activity-timeline', (src, el, ctx) => this.renderEmbed(src, el, ctx));
+    // another plugin may already own the `activity-timeline` block name; don't fail to load if so
+    for (const lang of ['activity-timeline', 'day-activity']) {
+      try { this.registerMarkdownCodeBlockProcessor(lang, (src, el, ctx) => this.renderEmbed(src, el, ctx)); }
+      catch (e) { console.warn('Activity Timeline: code block "' + lang + '" is taken by another plugin'); }
+    }
 
     // "Was this change made by me, on this device?" signals
     const mark = () => (this.lastInput = Date.now());
