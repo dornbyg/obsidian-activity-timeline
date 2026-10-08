@@ -1,0 +1,57 @@
+name: Bug report
+description: Something isn't working as expected
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect to see, and what did you see instead? Screenshots help a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the timeline in Week view
+        2. Tick a task in a note
+        3. ...
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: Settings → Community plugins → Activity Timeline
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      multiple: true
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - iOS / iPadOS
+        - Android
+    validations:
+      required: true
+  - type: input
+    id: obsidian-version
+    attributes:
+      label: Obsidian version
+      description: Settings → General
+  - type: textarea
+    id: setup
+    attributes:
+      label: Sync method and related plugins
+      description: e.g. iCloud, Obsidian Sync, Syncthing, Git; Tasks plugin version.
+  - type: textarea
+    id: console
+    attributes:
+      label: Errors from the developer console (optional)
+      description: On desktop, press Cmd+Option+I (Mac) or Ctrl+Shift+I (Windows/Linux), open the Console tab, and paste any red lines mentioning "Activity Timeline".
+      render: text

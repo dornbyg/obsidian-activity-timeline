@@ -1,0 +1,36 @@
+name: Feature request
+description: Suggest an idea or improvement for Activity Timeline
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Before posting, please check the existing issues in case someone has already suggested it — a 👍 on an existing request helps decide what to build next.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the situation or need, not just the feature. "I want to see what I did last Tuesday, but..." is very helpful.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like the plugin to do?
+      description: How would it work? Mockups and screenshots are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Your setup (optional)
+      description: Other plugins involved (Tasks, Dataview, Templater, Daily notes...), sync method, desktop or mobile.
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How important is this to you?
+      options:
+        - Nice to have
+        - Would use it often
+        - Can't really use the plugin without it
