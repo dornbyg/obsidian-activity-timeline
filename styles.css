@@ -115,3 +115,18 @@
 .at-embed-kind { font-size: 0.68em; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 1px 6px; border-radius: 2px; background: var(--at-c, var(--byg-grey)); color: var(--byg-ink); }
 .at-embed-kind.at-c-capture { color: #fff; }
 .at-embed-snip { color: var(--text-muted); flex-basis: 100%; padding-left: 134px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* 0.1.2: bulk / imported cards, indexing note, first-run window */
+.at-note { font-size: 0.8em; color: var(--text-faint); margin: -4px 0 8px; }
+.at-title.is-plain { cursor: default; }
+.at-title.is-plain:hover { text-decoration: none; }
+.at-details { margin-top: 8px; font-size: 0.85em; }
+.at-details summary { cursor: pointer; color: var(--text-muted); }
+.at-details .at-snippet { max-height: 14em; overflow-y: auto; }
+.at-path { font-family: var(--font-monospace); font-size: 0.85em; cursor: pointer; padding: 1px 0; }
+.at-path:hover { color: var(--byg-blue); }
+.at-modal p { color: var(--text-normal); }
+.at-modal .at-modal-faint { color: var(--text-muted); font-size: 0.9em; }
+.at-modal-options { display: flex; flex-direction: column; gap: 8px; margin: 16px 0; }
+.at-modal-options button { justify-content: flex-start; text-align: left; }
+.at-modal { --byg-blue: #177bc6; }
